@@ -1,0 +1,14 @@
+.about{
+    background-image: url('./../images/web-design-background.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 100vh;
+}
+.about-para{
+    padding-top: 15%;
+    padding-right: 55%;
+    padding-left: 40px;
+    color:white;
+    font-weight: 600;
+    
+}

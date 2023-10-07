@@ -1,0 +1,48 @@
+/* Apply grid layout to small grid items */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Adjust the number of columns as needed */
+    grid-gap: 10px;
+    /* Adjust the gap between grid items */
+}
+
+.grid-item {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    /* Hide overflowing content */
+    transition: transform 0.2s ease;
+    /* Add a smooth transition for the transform property */
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    /* Scale the grid item on hover */
+}
+.card {
+    width: 100%;
+    /* Make the card expand to the container width */
+    height: 100%;
+    /* Make the card expand to the container height */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    padding: 5px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+/* Rest of your CSS styles for Pagination component */

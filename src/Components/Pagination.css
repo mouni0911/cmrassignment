@@ -1,0 +1,36 @@
+.pagination {
+    text-align: center;
+    justify-content: center;
+}
+
+.page-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.page-item {
+    display: inline-block;
+    margin-right: 5px;
+    /* Adjust spacing as needed */
+    transition: background-color 0.3s ease;
+    /* Add a smooth transition for the background color */
+}
+
+.page-item button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.page-item button.active {
+    background-color: #555;
+}
+
+/* Hover effect for page buttons */
+.page-item:hover {
+    background-color: #0056b3;
+    /* Change the background color on hover */
+}
+
