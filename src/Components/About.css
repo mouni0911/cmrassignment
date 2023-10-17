@@ -1,14 +1,42 @@
 .about{
     background-image: url('./../images/web-design-background.png');
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat; 
+    background-attachment: fixed;
     height: 100vh;
 }
 .about-para{
-    padding-top: 15%;
-    padding-right: 55%;
-    padding-left: 40px;
+    padding-top: 7%;
+    padding-right: 30%;
+    padding-left: 20px;
     color:white;
     font-weight: 600;
     
+}
+/* Default styles for the About component */
+.about {
+    padding: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Media query for tablet responsiveness */
+@media screen and (max-width: 768px) {
+    .about {
+        font-size: 16px;
+        background-attachment: scroll;
+        /* Adjust font size for tablets */
+    }
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 576px) {
+    .about {
+        font-size: 14px;
+        
+        padding: 10px;
+        background-attachment: scroll;
+        
+    }
 }

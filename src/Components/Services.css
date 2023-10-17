@@ -1,7 +1,7 @@
 .services {
      background-image: url('./../images/istockphoto.jpg'); 
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     height: 100vh;
 }
 
@@ -55,4 +55,13 @@
     width: 100px;
     background: rgb(0, 102, 255);
 
+}
+@media (max-width:768px) {
+    .services{
+    height: 100vh;
+    }
+        .service-para {
+            padding-right: 5px;
+            padding-left: 15px;
+        }
 }

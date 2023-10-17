@@ -1,0 +1,43 @@
+/* Footer styles */
+footer {
+    background-color: #beb9b9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul.homefooter {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+ul.homefooter li {
+    margin: 0 10px;
+}
+
+#foot {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+#foot:hover {
+    color: #007bff;
+}

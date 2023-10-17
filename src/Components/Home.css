@@ -1,0 +1,183 @@
+/* /* Default styles for all devices
+
+.bgcolor {
+    background-color: rgb(30, 31, 31);
+    width: auto;
+    height: 4vw;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.ulcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.linkdeco {
+    text-decoration: none;
+    color: rgb(234, 236, 216);
+}
+
+.linkdeco:hover {
+    background-color: rgb(62, 104, 145);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.btn {
+    background-color: #fff;
+    padding: 5px 8px;
+    border-radius: 20em;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 100ms linear;
+    color: #0ebac5;
+    position: relative;
+    box-shadow: inset 0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.btn:active {
+    box-shadow: inset 0 0 0 4px #043b3f6b;
+}
+
+.btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    border-radius: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    animation: flash 100ms ease-in-out;
+    transform: scaleX(2) scaleY(2);
+}
+
+.btn:hover::before {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+        transform: translate(45px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0);
+    }
+}
+
+.signin {
+    margin-top: 5%;
+    width: 70vh;
+    height: 100vw;
+    position: relative;
+    align-items: center;
+    text-transform: uppercase;
+}
+ */
+ 
+img {
+    width: 100%;
+    height: 500px;
+}
+
+/* Default styles for the section */
+#secondsec {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the image */
+.sim {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-right: 20px;
+    
+}
+
+/* Style for the text content */
+.para {
+    text-align: justify;
+    cursor: text;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Button style */
+.btn {
+    background-color: #fff;
+    padding: 5px 8px;
+    border-radius: 20em;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 100ms linear;
+    color: #0ebac5;
+    position: relative;
+    box-shadow: inset 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.btn:active {
+    box-shadow: inset 0 0 0 4px #043b3f6b;
+}
+
+.btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    border-radius: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    animation: flash 100ms ease-in-out;
+    transform: scaleX(2) scaleY(2);
+}
+
+.btn:hover::before {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+}
+
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+
+    /* Adjust styles for smaller screens here */
+    .sim {
+        margin-right: 0;
+        /* Remove margin on smaller screens */
+    }
+
+    .para {
+        margin: 20px 0;
+        /* Adjust margin for text on smaller screens */
+        font-size: 14px;
+        /* Adjust font size for text on smaller screens */
+    }
+}
+

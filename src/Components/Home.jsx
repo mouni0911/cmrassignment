@@ -1,7 +1,8 @@
 import React from "react";
-import { Button, Carousel, CarouselItem, NavItem } from "react-bootstrap";
-import { Link } from "react-router-dom";
-
+import { Button, Carousel, CarouselItem } from "react-bootstrap";
+import Paginationdata from "./Paginationdata";
+import "./Home.css";
+import Footer from "./Footer";
 const Home = () => {
   return (
     <div className="Container">
@@ -22,19 +23,26 @@ const Home = () => {
         </Carousel>
       </section>
       <section id="secondsec" className="Container">
-        <p className="para">
-          <h1>Welcome To Interior World</h1>
-          Interior design is a multifaceted discipline that involves the art and
-          science of enhancing the interior of a space to create a more
-          aesthetically pleasing and functional environment. Interior designers
-          are professionals who plan, research, coordinate, and manage interior
-          design projects.
-        </p>
-        <img
-          src={require("./../images/interior.jpg")}
-          alt="interior"
-          className="simg"
-        ></img>
+        <div className="row">
+          <div className="col-md-6">
+            <h1>Welcome To Interior World</h1>
+
+            <p className="para">
+              Interior design is a multifaceted discipline that involves the art
+              and science of enhancing the interior of a space to create a more
+              aesthetically pleasing and functional environment. Interior
+              designers are professionals who plan, research, coordinate, and
+              manage interior design projects.
+            </p>
+          </div>
+          <div className="col-md-6">
+            <img
+              src={require("./../images/interior.jpg")}
+              alt="interior"
+              className="simg"
+            ></img>
+          </div>
+        </div>
       </section>
 
       <section
@@ -42,69 +50,31 @@ const Home = () => {
         className="bg-secondary Container"
         style={{ paddingTop: "100px" }}
       >
-        <img
-          src={require("./../images/gymdesign.jpg")}
-          alt="int"
-          className="sim"
-        />
-
-        <p className="para">
-          Interior decorating is outfitting a space with aesthetically pleasing
-          elements such as furniture, wall-coverings, accessories, rugs and
-          more. Interior decorators do not work with architects to create new
-          interior spaces; they embellish interior spaces that already exist.
-          <Button className="btn" size="sm">
-            Read
-          </Button>
-        </p>
-      </section>
-      <footer>
-        <div className="container">
-          <div className="footer-content">
-            <p style={{ color: "black" }}>
-              &copy; {new Date().getFullYear()} Your Company Name
+        <div className="row">
+          <div className="col-md-6">
+            <img
+              src={require("./../images/gymdesign.jpg")}
+              alt="int"
+              className="sim"
+            />
+          </div>
+          <div className="col-md-6">
+            <p className="para">
+              Interior decorating is outfitting a space with aesthetically
+              pleasing elements such as furniture, wall-coverings, accessories,
+              rugs and more. Interior decorators do not work with architects to
+              create new interior spaces; they embellish interior spaces that
+              already exist.
+              <Button className="btn" size="sm">
+                Read
+              </Button>
             </p>
-            <NavItem>
-              {" "}
-              <ul className="homefooter">
-                <li>
-                  <Link to="/" id="foot">
-                    {" "}
-                    Home{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/about" id="foot">
-                    {" "}
-                    About{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/services" id="foot">
-                    {" "}
-                    Services{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/pagination" id="foot">
-                    {" "}
-                    Paginationdata{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/contact" id="foot">
-                    {" "}
-                    Contact{" "}
-                  </Link>
-                </li>
-              </ul>
-            </NavItem>
           </div>
         </div>
-      </footer>
+      </section>
+      <br />
+      <Paginationdata style={{ marginTop: "40px" }} />
+      <Footer />
     </div>
   );
 };

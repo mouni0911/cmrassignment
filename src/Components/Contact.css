@@ -1,22 +1,18 @@
 .contact {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin-top: 0%;
+    display: grid;
+    position: relative;
+    justify-content:center;
     font-family: Helvetica, sans-serif;
     background-color: #032338;
     /* background-image: linear-gradient(135deg, #8BC6EC 100%, #9599E2 100%); */
-    height: 50vw;
-    width: 100%;
-    padding-top: 0.25%;
+    padding: 20px;
     color: azure;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 15%;
-    padding-left: 25%;
+    text-align: center;
+    
 }
-
+.form-group{
+    margin-bottom: 20px;
+}
 h5 {
     font-family: cursive;
     font-weight: 400;
