@@ -4,7 +4,7 @@ import Footer from "./Footer";
 const About = () => {
   return (
     <div className="Container">
-      <div className="about">
+      <div className="about ">
         <p className="about-para">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

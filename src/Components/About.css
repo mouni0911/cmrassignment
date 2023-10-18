@@ -1,15 +1,17 @@
 .about{
-    background-image: url('./../images/web-design-background.png');
+    /* background-image: url('./../images/web-design-background.png'); */
+    background-color: rgb(44, 44, 92);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; 
     background-attachment: fixed;
     height: 100vh;
+    position: relative;
 }
 .about-para{
     padding-top: 7%;
-    padding-right: 60%;
-    padding-left: 10px;
+    padding-right: 10%;
+    padding-left: 10%;
     color:white;
     font-weight: 600;
     position: absolute;

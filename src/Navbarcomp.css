@@ -5,10 +5,6 @@
     padding: 10px 0;
     
 }
-.contact{
-    display: flex;
-    justify-content: space-around;
-}
 .nav-links-container {
     display: flex;
     justify-content: space-around;
@@ -54,6 +50,9 @@
         padding: 10px 0;
         background-color: lightgray;
         /* Adjust the padding for smaller screens */
+        max-height: 60vh;
+        overflow-y: auto;
+        background-attachment: scroll;
     }
 
     .navbar-brand {
