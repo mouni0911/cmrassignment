@@ -14,16 +14,16 @@ const Services = () => {
           environments.
         </p>
 
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-sm-12">
-            <div class="search">
-              <i class="fa fa-search"></i>
+        <div className="row justify-content-center">
+          <div className="col-md-8 col-sm-12">
+            <div className="search">
+              <i className="fa fa-search"></i>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 placeholder="Have a question? Ask Now"
               />
-              <button class="btn btn-primary">Search</button>
+              <button className="btn btn-primary">Search</button>
             </div>
           </div>
         </div>

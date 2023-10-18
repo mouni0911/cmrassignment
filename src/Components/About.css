@@ -8,10 +8,11 @@
 }
 .about-para{
     padding-top: 7%;
-    padding-right: 30%;
-    padding-left: 20px;
+    padding-right: 60%;
+    padding-left: 10px;
     color:white;
     font-weight: 600;
+    position: absolute;
     
 }
 /* Default styles for the About component */
@@ -28,6 +29,9 @@
         background-attachment: scroll;
         /* Adjust font size for tablets */
     }
+        .about-para{
+    padding-right: 40%;
+        }
 }
 
 /* Media query for mobile responsiveness */
@@ -39,4 +43,7 @@
         background-attachment: scroll;
         
     }
+        .about-para {
+            padding-right: 30%;
+        }
 }

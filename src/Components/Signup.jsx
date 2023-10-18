@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "./Footer";
 
 const Signup = () => {
   const [userName, setuserName] = useState("");
@@ -28,51 +29,58 @@ const Signup = () => {
   };
 
   return (
-    <form onSubmit={submitForm} style={myStyle}>
-      <h3 style={{ alignItems: "center", fontWeight: "700" }}>Signup</h3>
+    <>
+      <div style={{ paddingBottom: "60px" }}>
+        <form onSubmit={submitForm} style={myStyle}>
+          <h3 style={{ alignItems: "center", fontWeight: "700" }}>Signup</h3>
 
-      <label htmlFor="userName">User Name</label>
+          <label htmlFor="userName">User Name</label>
 
-      <input
-        type="text"
-        name="userName"
-        id="userName"
-        onChange={(event) => {
-          setuserName(event.target.value);
-        }}
-        value={userName}
-        style={{ borderEndEndRadius: "5px" }}
-      />
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            onChange={(event) => {
+              setuserName(event.target.value);
+            }}
+            value={userName}
+            style={{ borderEndEndRadius: "5px" }}
+          />
 
-      <label htmlFor="password">Password</label>
-      <input
-        type="password"
-        name="password"
-        id="password"
-        onChange={(event) => {
-          setPassword(event.target.value);
-        }}
-        value={password}
-        style={{ borderEndEndRadius: "5px" }}
-      />
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            onChange={(event) => {
+              setPassword(event.target.value);
+            }}
+            value={password}
+            style={{ borderEndEndRadius: "5px" }}
+          />
 
-      {errorText && (
-        <h5 style={{ color: "red", fontFamily: "sans-serif" }}>{errorText} </h5>
-      )}
-      <br></br>
-      <button
-        style={{
-          width: "100px",
-          padding: "5px",
-          color: "white",
-          border: "none",
-          borderRadius: "5px",
-        }}
-        className="bg-primary"
-      >
-        SignIn
-      </button>
-    </form>
+          {errorText && (
+            <h5 style={{ color: "red", fontFamily: "sans-serif" }}>
+              {errorText}{" "}
+            </h5>
+          )}
+          <br></br>
+          <button
+            style={{
+              width: "100px",
+              padding: "5px",
+              color: "white",
+              border: "none",
+              borderRadius: "5px",
+            }}
+            className="bg-primary"
+          >
+            SignIn
+          </button>
+        </form>
+      </div>
+      <Footer />
+    </>
   );
 };
 

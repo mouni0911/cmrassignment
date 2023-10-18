@@ -17,6 +17,7 @@
 .search {
     position: relative;
     box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+    padding-bottom: 40px;
 
 }
 
@@ -25,7 +26,7 @@
     height: 60px;
     text-indent: 25px;
     border: 2px solid #d6d4d4;
-
+    
 
 }
 
@@ -63,5 +64,15 @@
         .service-para {
             padding-right: 5px;
             padding-left: 15px;
+        }
+
+}
+@media screen and (max-width:576px) {
+    .services {
+            height: 100vh;
+        }
+    
+        .service-para{
+            padding-top: 10px;
         }
 }
