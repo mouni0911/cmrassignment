@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Footer from "./Footer";
+import "./Signup.css";
 
 const Signup = () => {
   const [userName, setuserName] = useState("");
@@ -30,7 +31,7 @@ const Signup = () => {
 
   return (
     <>
-      <div style={{ paddingBottom: "60px" }}>
+      <div style={{ paddingBottom: "180px" }}>
         <form onSubmit={submitForm} style={myStyle}>
           <h3 style={{ alignItems: "center", fontWeight: "700" }}>Signup</h3>
 
