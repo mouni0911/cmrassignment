@@ -2,7 +2,7 @@ import React from "react";
 import "./Pagination.css";
 
 const Pagination = ({ data, currentPage, onPageChange }) => {
-  const totalPages = Math.ceil(data.length / 10);
+  const totalPages = Math.ceil(data.length / 20);
 
   // Generate an array of page numbers
   const pageNumbers = [];

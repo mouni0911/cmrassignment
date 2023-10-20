@@ -3,7 +3,6 @@
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    
 }
 .nav-links-container {
     display: flex;
@@ -50,9 +49,6 @@
         padding: 10px 0;
         background-color: lightgray;
         /* Adjust the padding for smaller screens */
-        max-height: 60vh;
-        overflow-y: auto;
-        background-attachment: scroll;
     }
 
     .navbar-brand {
@@ -64,4 +60,18 @@
         background-color: #504f4f;
         /* Background color for the collapsed menu */
     }
+}
+@media screen and (max-width:480px) {
+    
+                .navbar-brand {
+                    font-size: 20px;
+                }
+        
+                
+                 .nav-links-container {
+                     display: grid;
+                     justify-content:left;
+                     align-items: center;
+                     padding-right: 2px;
+                }
 }

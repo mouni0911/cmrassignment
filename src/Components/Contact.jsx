@@ -42,7 +42,7 @@ const Contact = () => {
           rows="4"
           placeholder="Your message..."
           style={{
-            width: "135%",
+            width: "105%",
             height: "150px",
             borderColor: "red ",
             borderRadius: "15px",

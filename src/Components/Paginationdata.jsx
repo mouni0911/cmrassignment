@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Pagination from "./Pagination";
-import "./Paginationdata.css"; // Import your CSS file
+import "./Paginationdata.css";
 
 const Paginationdata = () => {
   const [data, setData] = useState([]);

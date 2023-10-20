@@ -39,4 +39,12 @@
         grid-template-columns: repeat(2, 1fr);
         /* Adjust the number of columns for smaller screens */
     }
+        .card{
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           width:0%;
+           
+        }
+        
 }
