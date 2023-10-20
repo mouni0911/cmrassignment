@@ -31,7 +31,12 @@
 /* Hover effect for page buttons */
 .page-item:hover {
     background-color: #0056b3;
+    transform: scale(1.1);
     /* Change the background color on hover */
+}
+.grid-item:hover {
+    transform: scale(1.1);
+    /* Zoom in to 110% of the original size */
 }
 
 @media screen and (max-width: 768px) {

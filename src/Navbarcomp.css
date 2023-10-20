@@ -3,11 +3,13 @@
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+
 }
 .nav-links-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 /* Navbar brand (logo) styles */
@@ -25,6 +27,7 @@
     padding: 5px 10px;
     border-radius: 10px;
     text-decoration: none;
+
     
 }
 .nav-link.links:hover{
@@ -38,6 +41,7 @@
 .btnlink {
     text-decoration: none;
     color: #43405a;
+    transform: scale(1.1);
 }
 .linkdeco{
     text-decoration: none;
