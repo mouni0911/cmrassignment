@@ -27,8 +27,8 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <Footer className="footer" />
       </div>
+      <Footer />
     </>
   );
 };
