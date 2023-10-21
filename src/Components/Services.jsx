@@ -27,7 +27,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <Footer />
+        <Footer className="footer" />
       </div>
     </>
   );
